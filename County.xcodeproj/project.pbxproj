@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4E49B1A52F72DE030057142B /* CountyWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4E49B2042F6C46000057142B /* CountyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4E4C87BC2F8629EE007AC4A0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4E4C87BB2F8629E7007AC4A0 /* README.md */; };
+		4E4C87BE2F862A07007AC4A0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4E4C87BD2F8629FD007AC4A0 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4E49B1572F6C450B0057142B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,12 +27,36 @@
 			remoteGlobalIDString = 4E49B1462F6C45090057142B;
 			remoteInfo = County;
 		};
+		4E49B1A22F72DDA50057142B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E49B13F2F6C45090057142B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E49B2032F6C46000057142B;
+			remoteInfo = CountyWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4E49B1A42F72DDC80057142B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4E49B1A52F72DE030057142B /* CountyWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4E49B1472F6C45090057142B /* County.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = County.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E49B1562F6C450B0057142B /* CountyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E49B1602F6C450B0057142B /* CountyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E49B2042F6C46000057142B /* CountyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CountyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E4C87BB2F8629E7007AC4A0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4E4C87BD2F8629FD007AC4A0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,6 +73,11 @@
 		4E49B1632F6C450B0057142B /* CountyUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CountyUITests;
+			sourceTree = "<group>";
+		};
+		4E49B2052F6C46000057142B /* CountyWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CountyWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,15 +104,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4E49B2062F6C46000057142B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4E49B13E2F6C45090057142B = {
 			isa = PBXGroup;
 			children = (
+				4E4C87BB2F8629E7007AC4A0 /* README.md */,
+				4E4C87BD2F8629FD007AC4A0 /* .gitignore */,
 				4E49B1492F6C45090057142B /* County */,
+				4E49B2052F6C46000057142B /* CountyWidget */,
 				4E49B1592F6C450B0057142B /* CountyTests */,
 				4E49B1632F6C450B0057142B /* CountyUITests */,
+				4E49B1A02F72DDA50057142B /* Frameworks */,
 				4E49B1482F6C45090057142B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +134,16 @@
 				4E49B1472F6C45090057142B /* County.app */,
 				4E49B1562F6C450B0057142B /* CountyTests.xctest */,
 				4E49B1602F6C450B0057142B /* CountyUITests.xctest */,
+				4E49B2042F6C46000057142B /* CountyWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4E49B1A02F72DDA50057142B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +156,12 @@
 				4E49B1432F6C45090057142B /* Sources */,
 				4E49B1442F6C45090057142B /* Frameworks */,
 				4E49B1452F6C45090057142B /* Resources */,
+				4E49B1A42F72DDC80057142B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4E49B1A32F72DDA50057142B /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				4E49B1492F6C45090057142B /* County */,
@@ -163,6 +219,28 @@
 			productReference = 4E49B1602F6C450B0057142B /* CountyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4E49B2032F6C46000057142B /* CountyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E49B20A2F6C46000057142B /* Build configuration list for PBXNativeTarget "CountyWidgetExtension" */;
+			buildPhases = (
+				4E49B2072F6C46000057142B /* Sources */,
+				4E49B2062F6C46000057142B /* Frameworks */,
+				4E49B2082F6C46000057142B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4E49B2052F6C46000057142B /* CountyWidget */,
+			);
+			name = CountyWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = CountyWidgetExtension;
+			productReference = 4E49B2042F6C46000057142B /* CountyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +262,9 @@
 						CreatedOnToolsVersion = 26.3;
 						TestTargetID = 4E49B1462F6C45090057142B;
 					};
+					4E49B2032F6C46000057142B = {
+						CreatedOnToolsVersion = 26.3;
+					};
 				};
 			};
 			buildConfigurationList = 4E49B1422F6C45090057142B /* Build configuration list for PBXProject "County" */;
@@ -203,6 +284,7 @@
 				4E49B1462F6C45090057142B /* County */,
 				4E49B1552F6C450B0057142B /* CountyTests */,
 				4E49B15F2F6C450B0057142B /* CountyUITests */,
+				4E49B2032F6C46000057142B /* CountyWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +294,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4C87BC2F8629EE007AC4A0 /* README.md in Resources */,
+				4E4C87BE2F862A07007AC4A0 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +307,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4E49B15E2F6C450B0057142B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E49B2082F6C46000057142B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +344,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4E49B2072F6C46000057142B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +363,11 @@
 			isa = PBXTargetDependency;
 			target = 4E49B1462F6C45090057142B /* County */;
 			targetProxy = 4E49B1612F6C450B0057142B /* PBXContainerItemProxy */;
+		};
+		4E49B1A32F72DDA50057142B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E49B2032F6C46000057142B /* CountyWidgetExtension */;
+			targetProxy = 4E49B1A22F72DDA50057142B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -392,12 +495,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = County/County.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				DEVELOPMENT_TEAM = ;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -407,7 +512,6 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.teqcloud.County;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -422,12 +526,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = County/County.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				DEVELOPMENT_TEAM = ;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -437,7 +543,6 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.teqcloud.County;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -523,6 +628,74 @@
 			};
 			name = Release;
 		};
+		4E49B20B2F6C46000057142B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CountyWidget/CountyWidget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CountyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CountyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.teqcloud.County.CountyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4E49B20C2F6C46000057142B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CountyWidget/CountyWidget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CountyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CountyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.teqcloud.County.CountyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -558,6 +731,15 @@
 			buildConfigurations = (
 				4E49B1712F6C450B0057142B /* Debug */,
 				4E49B1722F6C450B0057142B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E49B20A2F6C46000057142B /* Build configuration list for PBXNativeTarget "CountyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E49B20B2F6C46000057142B /* Debug */,
+				4E49B20C2F6C46000057142B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
